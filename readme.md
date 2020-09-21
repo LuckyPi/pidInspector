@@ -13,11 +13,13 @@ pidInspector makes for a nice rapid way of verifying hijack conditions without h
 Find your suspect hijack using [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) or your tool of preference. Here are two great blogs on dll hijacking.
 <br> 
 https://hacknpentest.com/windows-privilege-escalation-dll-hijacking/
+<br>
 https://pentestlab.blog/2017/03/27/dll-hijacking/
 
-Rename pidInspector to the missing dll/exe name and place in the search path. Check the x64\Release  folder for precompiled binaries. dllLoad is for testing the pidInspector_dll.dll without preforming a hijack.       
+Rename pidInspector to the missing dll/exe name and place in the search path. You can download pidInspector precompiled binaries [here](https://github.com/LuckyPi/pidInspector/releases/latest). The dllLoad.exe application is for testing the pidInspector_dll.dll without preforming a hijack.   
+  
 
-*I strongly suggest limiting pidInspector to the applications folder/path and not using Windows, Windows\System, Windows\System32 folders. You may have a hard time removing it if its a shared dll.* 
+*I strongly suggest limiting pidInspector to the applications folder/path and not using Windows, Windows\System, Windows\System32 folders. You may have a hard time removing pidInspector if its a shared dll.* 
 
 **Log output:**  
 
